@@ -1,0 +1,5 @@
+CREATE USER 'tms_user'@'%' IDENTIFIED BY 'tms_password';
+CREATE DATABASE tms;
+GRANT ALL PRIVILEGES ON tms.* TO 'tms_user'@'%';
+FLUSH PRIVILEGES;
+EXIT;
