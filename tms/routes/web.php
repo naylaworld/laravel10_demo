@@ -33,3 +33,37 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+// New custom routes for web/category
+Route::prefix('web')->group(function () {
+    // Read route
+    Route::get('category', \App\Http\Livewire\Web\Category\Read::class)
+        ->name('web.category.read');
+    Route::get('category/read', \App\Http\Livewire\Web\Category\Read::class)
+        ->name('web.category.read');
+
+    // Create route
+    Route::get('category/create', \App\Http\Livewire\Web\Category\Create::class)
+        ->name('web.category.create');
+
+    // Update route
+    Route::get('category/update/{id}', \App\Http\Livewire\Web\Category\Update::class)
+        ->name('web.category.update');
+});
+
+// New custom routes for web/task
+Route::prefix('web')->group(function () {
+    // Read route
+    Route::get('task', \App\Http\Livewire\Web\Task\Read::class)
+        ->name('web.task.read');
+    Route::get('task/read', \App\Http\Livewire\Web\Task\Read::class)
+        ->name('web.task.read');
+
+    // Create route
+    Route::get('task/create', \App\Http\Livewire\Web\Task\Create::class)
+        ->name('web.task.create');
+
+    // Update route
+    Route::get('task/update/{id}', \App\Http\Livewire\Web\Task\Update::class)
+        ->name('web.task.update');
+});

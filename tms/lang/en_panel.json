@@ -25,7 +25,7 @@
     "Update": "Update",
     "Dashboard": "Dashboard",
     "List": "List",
-    "BuildTitle" : "Build a CRUD",
+    "BuildTitle": "Build a CRUD",
     "BuildMessage": "Do You really want to build this CRUD ? (Components will be replaced)",
     "Yes, Build it": "Yes, Build it.",
     "CRUD was activated": "CRUD was activated",
@@ -67,5 +67,13 @@
     "email": "Email",
     "Full Access": "Full Access",
     "Lists": "Lists",
-    "Delete": "Delete"
+    "Delete": "Delete",
+    "Name": "Name",
+    "Category": "Category",
+    "Categories": "Categories",
+    "Title": "Title",
+    "Description": "Description",
+    "Due_date": "Due_date",
+    "Task": "Task",
+    "Tasks": "Tasks"
 }
